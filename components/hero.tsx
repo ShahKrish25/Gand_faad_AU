@@ -15,7 +15,7 @@ import TradingChart from "@/components/trading-chart"
 import dynamic from "next/dynamic"
 
 // Dynamically import ThreeBackground with no SSR
-const ThreeBackground = dynamic(() => import("@/components/three-background"), { ssr: false })
+// const ThreeBackground = dynamic(() => import("@/components/three-background"), { ssr: false })
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
@@ -56,7 +56,7 @@ export default function Hero() {
   return (
     <>
       <div className="relative">
-        <div className="absolute inset-0 z-0">{mounted && <ThreeBackground />}</div>
+        {/* <div className="absolute inset-0 z-0">{mounted && <ThreeBackground />}</div> */}
         <div className="relative z-10">
           <Navbar />
           <div className="container py-8">
